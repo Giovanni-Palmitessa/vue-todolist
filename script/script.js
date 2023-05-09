@@ -1,6 +1,7 @@
 const app = Vue.createApp({
     data() {
         return {
+            newTodo: '',
             toDos: [
                 {
                     text: 'Fare la spesa',
