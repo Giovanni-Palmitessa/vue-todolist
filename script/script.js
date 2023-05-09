@@ -28,10 +28,11 @@ const app = Vue.createApp({
     },
     methods: {
         addTodo(){
-            this.toDos.push({
+            this.toDos.unshift({
                 text: this.newTodo,
                 done: false,
             });
+            this.newTodo = '';
         }
     }
 });
