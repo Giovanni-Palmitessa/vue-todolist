@@ -4,7 +4,7 @@ const app = Vue.createApp({
             toDos: [
                 {
                     text: 'Fare la spesa',
-                    done: false
+                    done: true
                 },
 
                 {
