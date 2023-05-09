@@ -1,8 +1,6 @@
 const app = Vue.createApp({
     data() {
         return {
-            newTodo: [...toDos],
-
             toDos: [
                 {
                     text: 'Fare la spesa',
@@ -20,15 +18,20 @@ const app = Vue.createApp({
                 },
 
                 {
-                    text: 'Droppare il like',
+                    text: 'Andare in palestra',
                     done: false
                 },
-            ]
+            ],
+
+            newTodo: ''
         }
     },
     methods: {
         addTodo(){
-            this.newTodo.push(this.newTodo);
+            this.toDos.push({
+                text: this.newTodo,
+                done: false,
+            });
         }
     }
 });
