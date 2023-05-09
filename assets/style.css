@@ -3,3 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.logo{
+    max-width: 500px;
+    margin-inline: auto;
+}
+
+.logo img{
+    width: 100%;
+}
