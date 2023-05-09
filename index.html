@@ -28,6 +28,8 @@
             <button @click="addTodo" type="button" class="btn btn-primary btn-lg ms-3">Aggiungi!</button>
         </div>
 
+        <p class="text-center text-danger">Devi inserire una task di almeno 5 caratteri!</p>
+
         <ul v-if="toDos.length != 0" class="list-group list pt-5">
             <li 
                 v-for="(toDo, index) in toDos" class="list-group-item d-flex justify-content-between align-items-center"
