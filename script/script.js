@@ -37,6 +37,10 @@ const app = Vue.createApp({
 
         deleteItem(index) {
             this.toDos.splice(index, 1);
+        },
+
+        jobDone(){
+            this.toDos.done = !this.toDos.done;
         }
     }
 });
