@@ -24,8 +24,6 @@ const app = Vue.createApp({
             ],
 
             newTodo: '',
-
-            isActive: false,
         }
     },
     methods: {
@@ -41,8 +39,8 @@ const app = Vue.createApp({
             this.toDos.splice(index, 1);
         },
 
-        jobDone(){
-            this.toDos.done = !this.toDos.done;
+        jobDone(i){
+            this.toDos[i].done = !this.toDos[i].done;
         }
     }
 });
