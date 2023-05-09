@@ -42,7 +42,7 @@ const app = Vue.createApp({
         },
 
         jobDone(){
-            this.isActive = !this.isActive;
+            this.toDos.done = !this.toDos.done;
         }
     }
 });
