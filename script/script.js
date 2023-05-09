@@ -23,7 +23,9 @@ const app = Vue.createApp({
                 },
             ],
 
-            newTodo: ''
+            newTodo: '',
+
+            isActive: false,
         }
     },
     methods: {
@@ -40,7 +42,7 @@ const app = Vue.createApp({
         },
 
         jobDone(){
-            this.toDos.done = !this.toDos.done;
+            this.isActive = !this.isActive;
         }
     }
 });
