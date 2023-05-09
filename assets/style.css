@@ -9,6 +9,9 @@
     margin-inline: auto;
 }
 
-.logo img{
-    width: 100%;
+.inputBtn{
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    max-width: 800px;
 }
