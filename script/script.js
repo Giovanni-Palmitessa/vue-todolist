@@ -16,6 +16,11 @@ const app = Vue.createApp({
                     text: 'Fare la lavatrice',
                     done: false
                 },
+
+                {
+                    text: 'Droppare il like',
+                    done: false
+                },
             ]
         }
     },
