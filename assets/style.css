@@ -13,3 +13,8 @@
     margin-inline: auto;
     max-width: 800px;
 }
+
+.list{
+    max-width: 900px;
+    margin-inline: auto;
+}
