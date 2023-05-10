@@ -24,15 +24,23 @@ const app = Vue.createApp({
             ],
 
             newTodo: '',
+
+            inputError: false,
         }
     },
     methods: {
         addTodo(){
-            this.toDos.unshift({
-                text: this.newTodo,
-                done: false,
-            });
-            this.newTodo = ''
+            let cleanedTodo = this.newTodo.trim();
+            if(cleanedTodo.length >= 5) {
+                this.toDos.unshift({
+                    text: this.newTodo,
+                    done: false,
+                });
+                this.newTodo = '';
+                this.inputError = false
+            } else {
+                this.inputError = true;
+            }
         },
 
         deleteItem(index) {
